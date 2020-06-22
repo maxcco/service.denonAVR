@@ -1,7 +1,4 @@
-import sys
 import xbmc
-import xbmcgui
-import xbmcaddon
 import utils
 
 

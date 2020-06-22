@@ -1,5 +1,4 @@
 import xbmc
-import xbmcgui
 import xbmcaddon
 import requests
 
