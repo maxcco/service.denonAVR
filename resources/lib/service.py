@@ -32,7 +32,7 @@ class DenonController():
 
 
     def runProgram(self):
-        while(not xbmc.abortRequested):
+        while not xbmc.abortRequested:
             # waiting loop
             xbmc.sleep(500)
 
