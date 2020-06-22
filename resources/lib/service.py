@@ -15,14 +15,12 @@ class PlayerMonitor(xbmc.Player):
     def onPlayBackStarted(self):
         if (self.isPlayingAudio() and self.currentMode != "MUSIC"):
             utils.log('Changing to Music Mode', xbmc.LOGINFO)
-            body = {'cmd0':'PutSurroundMode/MUSIC', 'cmd1':'aspMainZone_WebUpdateStatus/'}
-            utils.post(body)
+            utils.post({'cmd0':'PutSurroundMode/MUSIC', 'cmd1':'aspMainZone_WebUpdateStatus/'})
             self.currentMode = "MUSIC"
 
         if (self.isPlayingVideo() and self.currentMode != "MOVIE"):
             utils.log('Changing to Music Mode', xbmc.LOGINFO)
-            body = {'cmd0':'PutSurroundMode/MOVIE', 'cmd1':'aspMainZone_WebUpdateStatus/'}
-            utils.post(body)
+            utils.post({'cmd0':'PutSurroundMode/MOVIE', 'cmd1':'aspMainZone_WebUpdateStatus/'})
             self.currentMode = "MOVIE"
 
 
