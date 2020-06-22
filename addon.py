@@ -15,5 +15,5 @@ import utils
 from service import DenonController
 
 utils.log("Service starting...")
-controler = DenonController()
-controler.runProgram()
+controller = DenonController()
+controller.runProgram()
